@@ -15,11 +15,11 @@ import (
 )
 
 var config = struct {
-	Repo      string `flag:"repo,path to repository root"`
-	Reference string `flag:"ref,reference"`
+	Repo      string `flag:"repo,path to repository root (.git directory)"`
+	Reference string `flag:"ref,reference (HEAD, refs/heads/develop, etc.)"`
 	Listen    string `flag:"bind,address to listen"`
 }{
-	Repo:      ".",
+	Repo:      "./.git",
 	Reference: "HEAD",
 	Listen:    "127.0.0.1:8080",
 }
