@@ -207,6 +207,12 @@ body {
 	}
 }
 
+img {
+	display: block;
+	margin: 0 auto;
+	max-width: 100%;
+}
+
 h1 a, h2 a, h3 a, h4 a, h5 a {
 	text-decoration: none;
 	color: gray;
@@ -268,7 +274,6 @@ dd p {
 
 nav {
 	padding:.5em;
-	border-bottom: 1px solid gray;
 }
 </style>
 {{.}}
