@@ -17,3 +17,5 @@ and open this link: <http://127.0.0.1:8080/README.md> in your browser, you'll
 see this file.
 
 Files with `.md` or `.markdown` suffixes are rendered to html, other files served unmodified.
+
+**Note**: to make docr work on bare git repositories, you have to set `core.logAllRefUpdates = true` in your bare git repository and have at least one commit pushed after this change.
