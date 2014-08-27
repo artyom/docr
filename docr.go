@@ -275,6 +275,27 @@ dd p {
 nav {
 	padding:.5em;
 }
+table {
+	width: 100%;
+	border-bottom: 1px dotted #bbb;
+	border-collapse: collapse;
+	font-family: "PT Sans", "Droid Sans", serif;
+}
+th {
+	font-family: "PT Sans Caption", "Droid Sans", serif;
+	background-color: #bbb;
+}
+
+td, th {
+	border-left: 1px dotted #bbb;
+	border-right: 1px dotted #bbb;
+	padding-left:.5em;
+	padding-right:.5em;
+}
+
+table tr:nth-child(even) td {
+	background-color: #eee;
+}
 </style>
 {{.}}
 `
